@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home do site</title>
-</head>
-<body>
-    <div>Esta é a minha home de estudos!</div>
-    <div>Vamos ver no que da! kkkk</div>
-    <div>Num é que deu bom... Ihuuuuuu...</div>
-    <div>atualizando o git...</div>
-    <div>segunda atualização no git...</div>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <h3>Bem vindo, {{dic.usuario}}!!!</h3>
+        <h4>Esta é a minha home de estudos!</h4>
+        <div>Idade: {{dic.idade}} anos</div>
+        <!--div>token: {{dic.token}} anos</div-->
+        {% include 'nav.html' %}
+    </div>
+{% endblock %}
+    
